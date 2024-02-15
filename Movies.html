@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Películas de Harry Potter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.movie:hover {
+    transform: translateY(-5px);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.movie h3 {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.movie p {
+    margin: 0;
+    padding: 0 20px 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        padding: 40px;
+    }
+
+    .movie {
+        width: calc(33.33% - 40px);
+        margin: 20px;
+    }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #000000;
+}
+
+.logo {
+  width: 50px; /* Ajusta el ancho según el tamaño de tu logo */
+  height: auto;
+}
+
+.menu-items {
+  /* display: none; */ /* Esto oculta los elementos del menú */
+}
+
+.menu-items a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: url('img/cursor1.png'), auto;
+}
+
+</style>
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img src="img/Logo.png" alt="Logo" width="110px" height="50px">
+        </div>
+        <div class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="Personajes.html">Chacarters</a>
+            <a href="Books.html">Spells</a>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="movie">
+            <img src="img/H1.png" alt="Harry Potter y la piedra filosofal">
+            <h3>Harry Potter y la piedra filosofal</h3>
+        </div>
+        <div class="movie">
+            <img src="img/H2.png" alt="Harry Potter y la cámara secreta">
+            <h3>Harry Potter y la cámara secreta</h3>
+        </div>
+        <div class="movie">
+            <img src="img/H3.png" alt="Harry Potter y el prisionero de Azkaban">
+            <h3>Harry Potter y el prisionero de Azkaban</h3>
+        </div>
+        <div class="movie">
+          <img src="img/H4.png" alt="Harry Potter y la piedra filosofal">
+          <h3>Harry Potter y el caliz de fuego</h3>
+      </div>
+      <div class="movie">
+          <img src="img/H5.png" alt="Harry Potter y la cámara secreta">
+          <h3>Harry Potter y la orden  de fenix</h3>
+      </div>
+      <div class="movie">
+          <img src="img/H6.png" alt="Harry Potter y el prisionero de Azkaban">
+          <h3>Harry Potter y el misterio del principe</h3>
+      </div>
+      <div class="movie">
+        <img src="img/H7.png" alt="Harry Potter y la piedra filosofal">
+        <h3>Harry Potter y las reliquias de la muerte pt1</h3>
+    </div>
+    <div class="movie">
+        <img src="img/H8.png" alt="Harry Potter y la cámara secreta">
+        <h3>Harry Potter y las reliquias de la muerte pt2</h3>
+    </div>
+        <!-- Agrega más películas aquí en orden cronológico -->
+    </div>
+</body>
+</html>
+
